@@ -91,10 +91,10 @@ public class JsonIterator implements Closeable {
         this.tail = buf.length;
     }
 
-    public final void reset(byte[] buf, int head, int tail) {
+    public final void reset(byte[] buf, int head, int tailll) {
         this.buf = buf;
         this.head = head;
-        this.tail = tail;
+        this.tail = tailll;
     }
 
     public final void reset(Slice value) {
